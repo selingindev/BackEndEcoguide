@@ -7,7 +7,6 @@ import controller.IController;
 import model.dtos.AgendamentoDTO;
 import services.Agendamentos.AgendamentoService;
 
-
 public class AgendamentoController implements IController<AgendamentoDTO> {
 
     AgendamentoDTO agendamentoDTO;
@@ -15,11 +14,11 @@ public class AgendamentoController implements IController<AgendamentoDTO> {
 
     @Override
     public AgendamentoDTO criar(AgendamentoDTO obj) {
-        
+
         AgendamentoDTO agendamentoDTO = new AgendamentoDTO();
         agendamentoDTO.setTitulo("Salve");
         agendamentoDTO.setData(23);
-        agendamentoDTO.setItens(new ArrayList<>(Arrays.asList("sela", "aa")));        
+        agendamentoDTO.setItens(new ArrayList<>(Arrays.asList("sela", "aa")));
         agendamentoService.criar(agendamentoDTO);
         return agendamentoDTO;
     }
@@ -53,7 +52,5 @@ public class AgendamentoController implements IController<AgendamentoDTO> {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'selecionarID'");
     }
-
-    
 
 }

@@ -1,4 +1,5 @@
 package model.daos.agendamento;
+
 import java.util.List;
 import model.daos.ContratoDAO;
 import model.entidades.Agendamento;
