@@ -11,6 +11,10 @@ public class AgendamentoController implements IController<AgendamentoDTO> {
 
     AgendamentoDTO agendamentoDTO;
     AgendamentoService agendamentoService;
+    
+    Age(){
+        this.agendamentoService = new AgendamentoService();
+    }
 
     @Override
     public AgendamentoDTO criar(AgendamentoDTO obj) {

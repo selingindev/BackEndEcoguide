@@ -15,7 +15,7 @@ public class AgendamentoService implements IContratoService<AgendamentoDTO> {
     MapperAgendamento mapperAgendamento;
     
     @Override
-    public void criar(AgendamentoDTO aDto){
+    private void criar(AgendamentoDTO aDto){
         Agendamento agendamento = mapperAgendamento.toEntity(aDto);
         agendamentoDAO.criar(agendamento);
     }
